@@ -13,6 +13,7 @@ function println($name){
 	}
 }
 
+echo '$_SERVER[REQUEST_METHOD]: ' . $_SERVER['REQUEST_METHOD'] . "<br>";
 if ($_SERVER['REQUEST_METHOD']=='GET') {
 	$name_post = $_POST['x'];
 	$name_get = $_GET['x'];
